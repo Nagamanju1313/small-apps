@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer components{
+  .theme-shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
+@layer utilities{
+  .main-btn{
+    @apply hover:bg-sky-500 hover:text-white;
+    
+  }
+}
+.menu li a{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding:5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: block;
+  color:#333;
+  margin:5px;
+}
+:root {
+    --background: #ffffff;
+    --foreground: #ededed;
+}
+body {
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
