@@ -6,7 +6,7 @@ export default function Home() {
     <>
     <h2 className="text-center" style={{marginTop:"30px", marginBottom:"30px"}}>App List</h2>
       <ul className="menu flex flex-wrap gap-2 p-2 justify-center">
-        <li><Link href="/acronym" className="hover:bg-sky-500 hover:!text-white"> Acronym Generator</Link></li>
+        <li><Link href="/acronym" className="hover:bg-sky-500 hover:!text-white "> Acronym Generator</Link></li>
         <li><Link href="/todo" className="hover:bg-sky-500 hover:!text-white"> TODO App</Link></li>
         <li><Link href="/counter" className="hover:bg-sky-500 hover:!text-white"> Counter</Link></li>
         <li><Link href="/chips" className="hover:bg-sky-500 hover:!text-white"> Chips Input</Link></li>
@@ -19,6 +19,13 @@ export default function Home() {
         <li><Link href="/toggle-password" className="hover:bg-sky-500 hover:!text-white">Toggle Password</Link></li>
         <li><Link href="/guess-the-number" className="hover:bg-sky-500 hover:!text-white">Guess The Number</Link></li>
         <li><Link href="/match-pair-game" className="hover:bg-sky-500 hover:!text-white">Match pair Game</Link></li>
+<<<<<<< Updated upstream
+=======
+        <li><Link href="/timer" className="hover:bg-sky-500 hover:!text-white">Timer</Link></li>
+        <li><Link href="/age-calculator" className="hover:bg-sky-500 hover:!text-white">Age Calculator</Link></li>
+        <li><Link href="/progress-bar" className="hover:bg-sky-500 hover:!text-white">Progress Bar</Link></li>
+        <li><Link href="/mortgage-calculator" className="hover:bg-sky-500 hover:!text-white">Mortgage Calculator</Link></li>
+>>>>>>> Stashed changes
       </ul>
     </>
   );
