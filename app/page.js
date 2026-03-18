@@ -23,6 +23,11 @@ export default function Home() {
         <li><Link href="/age-calculator" className="hover:bg-sky-500 hover:!text-white">Age Calculator</Link></li>
         <li><Link href="/progress-bar" className="hover:bg-sky-500 hover:!text-white">Progress Bar</Link></li>
         <li><Link href="/mortgage-calculator" className="hover:bg-sky-500 hover:!text-white">Mortgage Calculator</Link></li>
+        <li><Link href="/dynamic-greeting-app" className="hover:bg-sky-500 hover:!text-white">Dynamic Greeting App</Link></li>
+        
+        <li><Link href="/calculator" className="hover:bg-sky-500 hover:!text-white">Calculator</Link></li>
+        <li><Link href="/weather-app" className="hover:bg-sky-500 hover:!text-white">Weather App</Link></li>
+        <li><Link href="/quizz-app" className="hover:bg-sky-500 hover:!text-white">Quizz App</Link></li>
       </ul>
     </>
   );
