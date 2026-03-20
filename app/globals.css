@@ -4,12 +4,18 @@
   .theme-shadow{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
+  .calc-btn-wrap button{
+    border:2px solid #333;
+    text-align: center;
+    padding:5px;
+  }
 }
 @layer utilities{
   .main-btn{
     @apply hover:bg-sky-500 hover:text-white;
     
   }
+  
 }
 .menu li a{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
