@@ -9,13 +9,16 @@ import { MdOutlineClear } from "react-icons/md";
 import { RiEqualLine } from "react-icons/ri";
 
 const CalculatorPage = ()=>{
-    const [state, setState] = useState(0);
-
+    const [state, setState] = useState("");
+    const calculate = ()=>{
+        setState(eval(state))
+    }
     return <div className="">
         <div className="max-w-[500px] mx-auto my-10">
             <div className="w-full">
+                <h3 className="my-10 block">Calculator</h3>
                 <div className="calc-btn-wrap relative">
-                    <input type="text" placeholder="" value={state}
+                    <input type="text" placeholder="0" value={state}
                         className="border-2 p-4 py-3 w-full bg-amber-100"
                         onChange={(e)=>isNaN(Number(e.target.value))  ? setState("") : setState(String(e.target.value))}
                     />
@@ -28,25 +31,25 @@ const CalculatorPage = ()=>{
                     <button onClick={()=>setState(state+"7")}>7</button>
                     <button onClick={()=>setState(state+"8")}>8</button>
                     <button onClick={()=>setState(state+"9")}>9</button>
-                    <button className="flex justify-center items-center"><MdOutlineClear /></button>
+                    <button className="flex justify-center items-center" onClick={()=>setState(state+"*")}><MdOutlineClear /></button>
                 </div>
                 <div className="grid grid-cols-4 gap-1 calc-btn-wrap mt-2">
                     <button onClick={()=>setState(state+"4")}>4</button>
                     <button onClick={()=>setState(state+"5")}>5</button>
                     <button onClick={()=>setState(state+"6")}>6</button>
-                    <button className="flex justify-center items-center"><LuMinus /></button>
+                    <button className="flex justify-center items-center" onClick={()=>setState(state+"-")}><LuMinus /></button>
                 </div>
                 <div className="grid grid-cols-4 gap-1 calc-btn-wrap mt-2">
                     <button onClick={()=>setState(state+"1")}>1</button>
                     <button onClick={()=>setState(state+"2")}>2</button>
                     <button onClick={()=>setState(state+"3")}>3</button>
-                    <button className="flex justify-center items-center"><GoPlus /></button>
+                    <button className="flex justify-center items-center" onClick={()=>setState(state+"+")}><GoPlus /></button>
                 </div>
                 <div className="grid grid-cols-4 gap-1 calc-btn-wrap mt-2">
-                    <button>%</button>
+                    <button  onClick={()=>setState(state+"%")}>%</button>
                     <button onClick={()=>setState(state+"0")}>0</button>
-                    <button className="flex justify-center items-center"><HiOutlineDivide /></button>
-                    <button className="flex justify-center items-center"><RiEqualLine /></button>
+                    <button className="flex justify-center items-center" onClick={()=>setState(state+"/")}><HiOutlineDivide /></button>
+                    <button className="flex justify-center items-center" onClick={calculate}><RiEqualLine /></button>
                 </div>
             </div>
         </div>

@@ -28,6 +28,7 @@ export default function Home() {
         <li><Link href="/calculator" className="hover:bg-sky-500 hover:!text-white">Calculator</Link></li>
         <li><Link href="/weather-app" className="hover:bg-sky-500 hover:!text-white">Weather App</Link></li>
         <li><Link href="/quizz-app" className="hover:bg-sky-500 hover:!text-white">Quizz App</Link></li>
+        <li><Link href="/quizz-app" className="hover:bg-sky-500 hover:!text-white">Price range slider</Link></li>
       </ul>
     </>
   );
